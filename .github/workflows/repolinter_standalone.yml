@@ -1,0 +1,14 @@
+name: 'Repolinter Standalone'
+
+on:
+  push:
+  pull:
+
+jobs:
+  repolinter-action:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v6
+      - name: 'Run Repolinter Standalone'
+        uses: todogroup/repolinter-action@v1
