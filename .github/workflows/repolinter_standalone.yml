@@ -1,8 +1,9 @@
-name: 'Repolinter Standalone'
+name: Repolinter Standalone
 
 on:
   push:
-  pull:
+  pull_request:
+  workflow_dispatch: 
 
 jobs:
   repolinter-action:
